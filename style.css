@@ -1,0 +1,394 @@
+/* ===== Fuentes ===== */
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/ibmplexmono-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/ibmplexmono-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { background: #fff; }
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site {
+  width: 1366px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* ===== Secciones ===== */
+.page {
+  position: relative;
+  width: 1366px;
+  height: 768px;
+  overflow: hidden;
+}
+
+.page.dark  { background: #000; }
+.page.light { background: #fff; }
+
+.page img {
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== Sección 0: Portada ===== */
+.hero { display: flex; }
+
+.hero-text {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 76.8px 0 84.1px 76.8px;
+}
+
+.hero-name {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 30.67px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 42px;
+}
+
+.hero-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 66.67px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 72px;
+}
+
+.hero-imgs {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 46.8px;
+}
+
+.hero-img-a,
+.hero-img-b {
+  flex: 0 0 366.3px;
+  width: 366.3px;
+  height: 549.5px;
+}
+.hero-img-a { align-self: flex-end; }
+.hero-img-b { align-self: flex-start; }
+
+/* ===== Sección 1: Mi filosofía ===== */
+.divider {
+  position: absolute;
+  left: 302.6px; top: 79.6px;
+  width: 960.1px; height: 1px;
+  background: #000;
+}
+.divider-lg {
+  width: 994.9px;
+  background: #fff;
+}
+
+.filosofia { display: flex; align-items: flex-start; }
+
+.filosofia-col {
+  width: 439.6px;
+  margin: 65.1px 0 0 101.1px;
+}
+
+.titulo-filosofia {
+  margin-left: 16.9px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 25.33px;
+  font-weight: 700;
+  color: #000;
+  line-height: 35px;
+}
+
+.foto-filosofia {
+  width: 439.6px;
+  height: 549.5px;
+  margin-top: 41.6px;
+}
+
+.texto-filosofia {
+  width: 527.4px;
+  margin: 491.5px 0 0 142.3px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22.67px;
+  font-weight: 400;
+  color: #000;
+  line-height: 31px;
+}
+
+/* ===== Secciones 2 y 3: fotos grandes ===== */
+.full-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 102px;
+}
+.foto-full,
+.foto-full-3 {
+  flex: 0 0 1153.7px;
+  width: 1153.7px;
+  height: 564.1px;
+}
+
+
+/* ===== Sección 4: Proyectos ===== */
+.proyectos { display: flex; flex-direction: column; align-items: flex-start; }
+
+.titulo-proyectos {
+  margin: 65.1px 0 0 118px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 25.33px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 35px;
+}
+
+.proyectos-grid {
+  display: flex;
+  gap: 26px;
+  margin: 69px 0 0 0;
+}
+.proyectos-grid img {
+  flex: 0 0 322.3px;
+  width: 322.3px;
+  height: 429.8px;
+}
+
+.subtitulo-proyectos {
+  width: 1154.9px;
+  margin: 74px 0 0 105.6px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.35;
+}
+
+/* ===== Sección 5: Galería ===== */
+.galeria { display: flex; align-items: flex-start; }
+.galeria-a {
+  width: 512px;
+  height: 768px;
+  margin-left: 75.7px;
+}
+.galeria-b {
+  width: 510.2px;
+  height: 768px;
+  margin-left: 191.3px;
+}
+
+/* ===== Sección 6: Equipo ===== */
+.equipo { display: flex; align-items: flex-start; }
+.equipo-img {
+  width: 509.7px;
+  height: 622.6px;
+  margin: 80.1px 0 0 76.8px;
+}
+.equipo-right {
+  display: flex;
+  flex-direction: column;
+  margin: 103.4px 0 0 305.2px;
+}
+.equipo-detalle {
+  width: 254.8px;
+  height: 318.8px;
+}
+.equipo-info {
+  width: 254.8px;
+  margin-top: 25.1px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 15.96px;
+  font-weight: 400;
+  color: #000;
+  line-height: 22px;
+}
+.equipo-info p { margin-bottom: 0; }
+.equipo-titulo {
+  margin-bottom: 30px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15.25px;
+  font-weight: 700;
+  color: #000;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.equipo-nota { margin-top: 22px; }
+
+/* ===== Sección 7: Cuadrícula ===== */
+.cuadricula { display: flex; align-items: flex-start; }
+.cuadricula-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  gap: 10.3px 10.5px;
+  margin: 27.8px 0 0 0;
+}
+.cuadricula-grid img {
+  width: 240px;
+  height: 240px;
+}
+.cuadricula-grande {
+  width: 576px;
+  height: 768px;
+  margin-left: 24.4px;
+}
+
+/* ===== Sección 8: Producto ===== */
+.producto { display: flex; flex-direction: column; align-items: flex-start; }
+.producto-txt {
+  display: flex;
+  align-items: flex-start;
+  gap: 11.3px;
+  margin: 51.8px 0 0 92.3px;
+}
+.año {
+  width: 157.2px;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 27px;
+}
+.texto-producto {
+  width: 1012.9px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 27px;
+}
+.producto-imgs {
+  display: flex;
+  align-items: flex-start;
+  gap: 16.8px;
+  margin: 271.2px 0 0 0;
+}
+.producto-imgs img { flex-shrink: 0; }
+.producto-a { width: 259.7px; height: 389.6px; }
+.producto-b,
+.producto-d {
+  width: 260px;
+  height: 389.9px;
+  margin-top: -75.7px;
+}
+.producto-c,
+.producto-e {
+  width: 259.5px;
+  height: 389.2px;
+}
+
+/* ===== Sección 9: Contacto ===== */
+.contacto { display: flex; flex-direction: column; align-items: flex-start; }
+.contacto-fotos {
+  display: flex;
+  gap: 6.2px;
+  margin-top: 76.8px;
+}
+.contacto-fotos img {
+  height: 125.76px;
+  flex: 0 0 99.35px;
+}
+.contacto-titulo {
+  width: 545.6px;
+  margin: 80.5px 0 0 76.8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 73.33px;
+  font-weight: 700;
+  color: #000;
+  line-height: 79px;
+}
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0 0 76.8px;
+}
+.contacto-bloque,
+.contacto-loc {
+  width: 252.7px;
+}
+.contacto-loc { margin-top: 51.6px; }
+.contacto-label {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 21.38px;
+  font-weight: 700;
+  color: #000;
+  line-height: 29px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.contacto-email {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 19.28px;
+  font-weight: 400;
+  color: #000;
+  line-height: 26px;
+}
+.contacto-ubicacion {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 16.58px;
+  font-weight: 400;
+  color: #000;
+  line-height: 22.9px;
+}
+
+.btn-contacto {
+  position: absolute;
+  left: 972.6px; top: 452.8px;
+  width: 289.2px; height: 64.9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #08080b;
+  color: #fff;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 23.96px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* ===== Sección 10: final ===== */
+
+.foto-full-final {
+  position:absolute;
+  width:100%;
+  z-index:1;
+}
+
+.final-text {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1365px) {
+  .site { overflow-x: auto; }
+}
